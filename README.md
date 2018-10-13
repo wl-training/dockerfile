@@ -13,9 +13,9 @@ Step 2
 * cd to the folder java-example and create your new Dockerfile there
   * you can use openjdk:8u171-jdk-alpine as a base image (~105 MB, already contains the JDK)
   * add the Hello.java file to the image and make sure the file is compiled by java (using javac command)
-  * define a CMD at the end. the compiled class should be called when running the container (using current folder as classpath) 
+  * define a CMD at the end. the compiled class should be called when running the container ('java -cp . Hello' will work) 
   * verify that it works with a new container
-* Hint: you can of course create your Dockerfile line-by-line and also run the intermediate steps as a container (interactive mode with /bin/sh)
+* HINT: you can of course create your Dockerfile line-by-line and also run the intermediate steps as a container (interactive mode with /bin/sh)
 
 Step 3
 ------
@@ -23,9 +23,12 @@ Step 3
 * use ENTRYPOINT instead of CMD now in your Dockerfile, so that you can hand over the arguments with docker
 * rebuild the image and test with new containers
 
-Step 4 (for quick people)
+Step 4 (for quick people!)
 -------------------------
 * it's often useful to use a startup script (e.g. shell script) instead of a hardcoded format/entrypoint
 * you can then still change things/do migrations before the actual container process starts
 * add an ENV instruction in your Dockerfile and create a script that outputs this variable before starting the java process
 * verify that you can also change the value of the env variable in a running Container (e.g. using 'docker cp')
+
+
+HINT: There's also a solution-branch, but don't look too early! :)
