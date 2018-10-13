@@ -1,6 +1,5 @@
-Create your own Dockerfile
-##########################
-
+ Create your own Dockerfile
+============================
 Step 1
 ------
 * the folder python-example contains the Dockerfile that we just saw + a one-liner python file
