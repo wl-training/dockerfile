@@ -28,7 +28,7 @@ Step 4 (for quick people!)
 * it's often useful to use a startup script (e.g. shell script) instead of a hardcoded format/entrypoint
 * you can then still change things/do migrations before the actual container process starts
 * add an ENV instruction in your Dockerfile and create a script that outputs this variable before starting the java process
-* verify that you can also change the value of the env variable in a running Container (e.g. using 'docker cp')
+* verify that you can also change the script/env-variable in a existing container (e.g. using 'docker cp')
 
 
 HINT: There's also a solution-branch, but don't look too early! :)
