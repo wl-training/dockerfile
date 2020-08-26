@@ -2,9 +2,9 @@
 ============================
 Step 1
 ------
-* the folder python-example contains the Dockerfile that we just saw + a one-liner python file
+* the folder python-example contains a simple Dockerfile + a one-liner python file
 * start with building an image from python-example. give it a meaningful name.
-* run that image and make sure that you see the expected output
+* run that image and make sure that you see the expected "Hello World" output
 
 Step 2
 ------
